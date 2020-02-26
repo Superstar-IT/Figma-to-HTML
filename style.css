@@ -1,0 +1,521 @@
+body {
+	background-color: #E5E5E5;
+}
+
+* {
+	font-family: Roboto;
+}
+
+.btn {
+	border: 0;
+	padding: 0;
+}
+
+table tr {
+	display: block;
+}
+
+.main-container {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+}
+.main-container .main-body {
+	height: 280px;
+	padding: 32px;
+}
+
+.main-container ul {
+	background-color: #4A148C;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.main-container ul .btn3 {
+	padding-top: 16px;
+	padding-left: 32px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	/* identical to box height */
+	letter-spacing: 0.15px;
+	background-color: #4A148C;
+}
+
+.main-container ul .btn3 span {
+	font-weight: 900;
+}
+
+.main-container #content-table {
+	height: 344px;
+}
+
+.main-container table .input_group, .main-container table .keyboard {
+	width: 400px;
+}
+
+.main-container table .input_group {
+	width: 368px;
+}
+
+.main-container table .keyboard td {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 27px;
+	/* identical to box height */
+
+	/*display: flex;
+	align-items: flex-end;
+	text-align: center;*/
+}
+
+.main-container table .input_group {
+	padding-left: 32px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.main-container table .input_group table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.main-container table .input_group table td {
+	padding: 0;
+	margin: 0;
+}
+
+.main-container table .input_group .input_label {
+	padding:0;
+}
+
+.main-container table .input_group .input_label h2 {
+	padding:0;
+	margin: 0;
+	margin-bottom:16px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	/* identical to box height */
+	letter-spacing: 0.15px;
+}
+
+.main-container table .input_group input {
+	height: 56px;
+	width: 360px;
+	background: #EDEDED;
+	/* 2db */
+	border-radius: 4px;
+	margin: 0;
+	margin-bottom: 24px;
+	padding-left: 56px!important;
+	font-size: 16px;
+}
+
+.main-container table .input_group input:focus {
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+	border-bottom: 1px solid #4A148C;	
+}
+
+#edt40 {
+	/*margin-top: 16px!important;*/
+}
+
+#text {
+	float: right;
+	margin-left: 230px;
+	margin-bottom: 20px;
+}
+
+.main-container table .input_group input.btn4 {
+	border-radius: 200px;
+	width: 120px;
+	height: 36px;
+	margin: 0;
+	padding: 0!important;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	/* identical to box height, or 114% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	justify-content: center;
+}
+
+.main-container table .input_group input.btn4:hover {
+	background-color: #4A148C;
+	color: white;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+/* Style the input container */
+.main-container table .input_group .input-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Style the form icons */
+.main-container table .input_group .icon {
+	position: absolute;
+	font-size: 16px;
+  	padding: 20px 18px;
+  	color: #7E7E7E;
+  	text-align: center;
+}
+
+/* Style the input fields */
+.main-container table .input_group .input-field {
+ 	padding: 10px;
+  	outline: none;
+}
+
+.main-container table .input_group .btn2 {
+	position: absolute;
+    padding: 20px;
+    margin-left: 310px;
+}
+
+.main-container #content-table .keyboard table {
+	height: 176px;
+}
+
+.main-container #content-table .keyboard .btn2 {
+	font-size: 23px;
+}
+
+.main-container .main-body .label-txt {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.15px;
+	margin-bottom: 16px;
+}
+
+
+
+
+#check-history .history-box {
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+	border-radius: 4px;
+	background-color: #FAFAFA;
+	height: 162px;
+}
+
+#check-history #blood-pressure {
+	width: 297px;
+	float: left;
+	margin-right: 16px;
+}
+
+#check-history #blood-oxygen {
+	width: 235px;
+	float: left;
+	margin-right: 16px;
+}
+
+#check-history #blood-weight {
+	width: 172px;
+	float: left;
+}
+
+#check-history .history-box .top {
+	height: 92px;
+	padding: 16px;
+	border-bottom: 1px solid #DDDDDD;
+}
+#check-history .history-box .bottom {
+	text-align: center;
+	height: 26px;
+}
+#check-history .history-box .bottom p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #4A148C;
+	margin: 0;
+	line-height: 2.5em;
+}
+
+#check-history .history-box .history-box-label .history-box-label-txt {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+	color: #7E7E7E;
+	mix-blend-mode: normal;
+	float: left;
+	margin: 0;
+	}
+
+#check-history .history-box .history-box-label .history-box-label-val {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.15px;
+	color: #202020;
+	mix-blend-mode: normal;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#check-history .history-box .history-box-label i {
+	color: #DC3737;
+	font-size: 11px;
+	padding-top: 6px;
+}
+
+#check-history .history-box .history-box-value {
+	margin-top: 16px;
+}
+
+#check-history .history-box .history-box-value .history-box-value-txt {
+	float: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	color: #202020;
+	mix-blend-mode: normal;
+	margin: 0 12px 0 0;
+}
+
+#check-history .history-box .history-box-value .history-box-value-unit {
+	float: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.4px;
+	color: #7E7E7E;
+	mix-blend-mode: normal;
+	margin: 30px 0 0 0;
+}
+
+#question {
+	margin-top: 42px;
+	justify-content: center;
+	text-align: center;
+}
+
+#question .btn {
+	width: 186px;
+	height: 36px;
+	background: #4A148C;
+	border-radius: 200px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+	margin: 0;
+	padding: 0;
+}
+
+#question .btn .btn-icon {
+	float: left;
+	margin: 7px 0 0 18px;
+}
+
+#question .btn p {
+	color: white;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	align-items: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	margin: 4.5px 0;
+	line-height: 1.5em;
+}
+
+.main-container ul .btn3 p {
+	float: left;
+	margin: 0 11px 0 0;
+}
+
+.main-container ul .btn3 i {
+	opacity: 0.87;
+}
+
+/*Login Page*/
+#login #login-label {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.15px;
+	color: #202020;
+	margin: 0 0 16px 0;
+}
+
+#login .main-body .main-body-left, #login .main-body .main-body-right {
+	width: 50%;
+	float: left;
+}
+
+#login .main-body .main-body-left .login-input-icons i, #login .main-body .main-body-left .login-input-icons .btn { 
+    position: absolute; 
+} 
+          
+#login .main-body .main-body-left .login-input-icons { 
+    width: 360px; 
+    margin-bottom: 24px; 
+} 
+  
+#login .main-body .main-body-left .login-input-icons .icon { 
+    padding: 20px 18px; 
+    color: #7E7E7E;
+} 
+  
+#login .main-body .main-body-left .login-input-icons .input-field { 
+    width: 100%; 
+    padding: 10px;
+    padding-left: 56px; 
+    background: #EDEDED;
+	border-radius: 4px;
+	border: 0;
+	height: 54px;
+} 
+
+#login .main-body .main-body-left .login-input-icons .input-field:focus {
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+	border-bottom: 2px solid #4A148C;
+}
+
+#login .main-body .main-body-left .login-input-icons .btn {
+ 	margin-left: -57px;
+ 	background-color: transparent;
+}
+
+#login .main-body .main-body-left .login-input .btn-sign {
+	width: 120px;
+	height: 36px;
+	background: #DDDDDD;
+	border-radius: 200px;	
+}
+
+#login .main-body .main-body-left .login-input .btn-sign:hover {
+	background: #4A148C;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+#login .main-body .main-body-left .login-input .btn-sign:hover p {
+	color: white;
+}
+
+#login .main-body .main-body-left .login-input .btn-sign p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #9E9E9E;
+	margin: 10px 32px;
+}
+
+#login .main-body .main-body-left .login-input-icons {
+  	position: relative;
+}
+
+#login .main-body .main-body-left .login-input-icons label.input-field-label{
+	position: absolute;
+	left: 56px;
+	pointer-events: none;
+	transition: all .22s;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #7E7E7E;
+	mix-blend-mode: normal;
+}
+
+#login .main-body .main-body-left .login-input-icons input.input-field:focus + label.input-field-label
+{
+	top: 0;
+	transform: translateY(0);
+	left: 56px;
+	opacity: 1;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.4px;
+	color: #4A148C;
+}
+
+#login .main-body .main-body-left .login-input-icons .input-field-label-cover{
+	width: 100%;
+	position: absolute;
+	height: 4px;
+	top: 1.25rem;
+}
+
+#login .main-body .main-body-right {
+	padding-top: 10px;
+}
+
+#login .main-body .main-body-right .keyboard-row {
+	margin: 0 0 10px 20px;
+}
+
+#login .main-body .main-body-right .keyboard-row .btn2 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 27px;
+	align-items: flex-end;
+	text-align: center;
+	color: #4A148C;
+	margin-right: 9px;
+}
+
+#login .main-body .main-body-right #but_num {
+	font-size: 15px;
+	margin-right: 8px;
+	float: left;
+}
+
+#login .main-body .main-body-right #but_space {
+	width: 225px;
+	height: 23px;
+	background: #DDDDDD;
+	border-radius: 3px;
+	color: #DDDDDD;
+	float: left;
+	margin: 6.5px 20px 0 0;
+}

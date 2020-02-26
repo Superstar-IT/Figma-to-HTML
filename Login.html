@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+   <HEAD>
+	    <TITLE>
+	        Login Page
+	    </TITLE>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </HEAD>
+   <style type="text/css">
+.btn1 {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.btn2 {
+    padding: 0;
+	border: none;
+	background: none;
+	color:#38006B;
+	padding: 5px 5px;
+	font-size: 16px;
+}
+
+.btn3 {
+    background-color: #38006B; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn4 {
+    background-color: #DDDDDD; /* Green */
+    border: none;
+    color: #9E9E9E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 22px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.myclass {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+	
+.myclass2 {        
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	width: 50em;
+    height: 4em;	
+    }
+	
+.container {
+  height: 100px;
+  width: 150px;
+  position: relative;
+  background-color:Red;
+}
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.text {
+  position: absolute;
+    top: 70px;
+    left: 5;    
+	color: black;    
+	width: 70px;
+	height: 20px;
+}
+.text2 {
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  color: black;    
+  width: 60px;
+  height: 80px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38006B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li2 {
+  float: right;
+}
+
+li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li3 {
+  float: right;
+}
+
+li3 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  top: 15px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  
+thead{
+	background-color: #0daf3f;
+	color: #FFFFFF;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+</style> 
+
+<BODY >
+	<div id="login" class="main-container">
+		<ul>
+			<li>
+				<button class="btn3" onclick="logout()" p style="font-size:20px;text-align: top;">
+					<tr class="txt">Health <span>Pi</span></tr>
+					<img class="img" src=""/>
+				</button>
+			</li>
+		</ul>
+		<div class="main-body">
+			<p id="login-label">Sign In</p>
+			<div class="main-body-left">
+				<div class="login-input-icons">
+					<i class="fa fa-envelope icon"></i> 
+            		<input type="text" name="Email" class="myclass input-field floatField" id="edt40" value="" onclick="fncEmail()">
+            		<label class="input-field-label">Email</label>
+    				<div class="input-field-label-cover"></div>
+				</div>
+				<div class="login-input-icons">
+					<i class="icon">
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.65 4C10.83 1.67 8.61 0 6 0C2.69 0 0 2.69 0 6C0 9.31 2.69 12 6 12C8.61 12 10.83 10.33 11.65 8H16V12H20V8H22V4H11.65ZM6 8C4.9 8 4 7.1 4 6C4 4.9 4.9 4 6 4C7.1 4 8 4.9 8 6C8 7.1 7.1 8 6 8Z" fill="#7E7E7E"/>
+						</svg>
+					</i> 
+            		<input class="input-field" type="password" name="Password">
+            		<label class="input-field-label">Password</label>
+    				<div class="input-field-label-cover"></div>
+            		<button class="btn icon" onclick="fnc_showpass()" id="pwbut">
+						<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C6 0 1.73 3.11 0 7.5C1.73 11.89 6 15 11 15C16 15 20.27 11.89 22 7.5C20.27 3.11 16 0 11 0ZM11 12.5C8.24 12.5 6 10.26 6 7.5C6 4.74 8.24 2.5 11 2.5C13.76 2.5 16 4.74 16 7.5C16 10.26 13.76 12.5 11 12.5ZM8 7.5C8 5.84 9.34 4.5 11 4.5C12.66 4.5 14 5.84 14 7.5C14 9.16 12.66 10.5 11 10.5C9.34 10.5 8 9.16 8 7.5Z" fill="#7E7E7E"/>
+						</svg>
+					</button>
+            		
+				</div>
+				<div class="login-input">
+					<span id="text" onClick="forgetPass()">Forgot password?</span>
+				</div>
+				<div class="login-input">
+					<button class="btn-sign btn" onclick="onSecSave()"><p>SIGN IN</p></button>
+				</div>
+			</div>
+			<div class="main-body-right">
+				<div class="keyboard-row">
+					<input id="but_q" class="btn2" type="button" value="q" onclick="fnc_q()">
+					<input id="but_w" class="btn2" type="button" value="w" onclick="fnc_w()">
+					<input id="but_e" class="btn2" type="button" value="e" onclick="fnc_e()">
+					<input id="but_r" class="btn2" type="button" value="r" onclick="fnc_r()">
+					<input id="but_t" class="btn2" type="button" value="t" onclick="fnc_t()">
+					<input id="but_y" class="btn2" type="button" value="y" onclick="fnc_y()">
+					<input id="but_u" class="btn2" type="button" value="u" onclick="fnc_u()">
+					<input id="but_i" class="btn2" type="button" value="i" onclick="fnc_i()">
+					<input id="but_o" class="btn2" type="button" value="o" onclick="fnc_o()">
+					<input id="but_p" class="btn2" type="button" value="p" onclick="fnc_p()">
+				</div>
+				<div class="keyboard-row" style="text-align: center;">
+					<input id="but_a" class="btn2" type="button" value="a" onclick="fnc_a()">
+					<input id="but_s" class="btn2" type="button" value="s" onclick="fnc_s()">
+					<input id="but_d" class="btn2" type="button" value="d" onclick="fnc_d()">
+					<input id="but_f" class="btn2" type="button" value="f" onclick="fnc_f()">
+					<input id="but_g" class="btn2" type="button" value="g" onclick="fnc_g()">
+					<input id="but_h" class="btn2" type="button" value="h" onclick="fnc_h()">
+					<input id="but_j" class="btn2" type="button" value="j" onclick="fnc_j()">
+					<input id="but_k" class="btn2" type="button" value="k" onclick="fnc_k()">
+					<input id="but_l" class="btn2" type="button" value="l" onclick="fnc_l()">
+				</div>
+				<div class="keyboard-row">
+					<button class="btn2" onclick="fnc_shift()">
+						<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3527 13H16.3527V14V19C16.3527 19.5523 15.905 20 15.3527 20H7.29716C6.74488 20 6.29716 19.5523 6.29716 19V14V13H5.29716H2.00411C1.12194 13 0.671925 11.9409 1.28427 11.3059L10.8224 1.41444L21.0409 11.2806C21.688 11.9053 21.2457 13 20.3464 13H17.3527Z" stroke="#4A148C" stroke-width="2" stroke-linecap="round"/>
+						</svg>
+					</button>
+					<input id="but_z" class="btn2" type="button" value="z" onclick="fnc_z()">
+					<input id="but_x" class="btn2" type="button" value="x" onclick="fnc_x()">
+					<input id="but_c" class="btn2" type="button" value="c" onclick="fnc_c()">
+					<input id="but_v" class="btn2" type="button" value="v" onclick="fnc_v()">
+					<input id="but_b" class="btn2" type="button" value="b" onclick="fnc_b()">
+					<input id="but_n" class="btn2" type="button" value="n" onclick="fnc_n()">
+					<input id="but_m" class="btn2" type="button" value="m" onclick="fnc_m()">
+					<button class="btn2" onclick="fnc_backs()">
+						<svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2788 5.97816C10.6537 5.60716 11.2615 5.60716 11.6364 5.97816L17.9588 12.2347C18.3337 12.6057 18.3337 13.2072 17.9588 13.5782C17.5839 13.9492 16.9761 13.9492 16.6011 13.5782L10.2788 7.32166C9.90389 6.95066 9.90389 6.34916 10.2788 5.97816Z" fill="#4A148C"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5612 5.97816C17.1863 5.60716 16.5785 5.60716 16.2036 5.97816L9.8812 12.2347C9.5063 12.6057 9.5063 13.2072 9.8812 13.5782C10.2561 13.9492 10.8639 13.9492 11.2389 13.5782L17.5612 7.32166C17.9361 6.95066 17.9361 6.34916 17.5612 5.97816Z" fill="#4A148C"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M7.28196 1.9L2.28996 9.5L7.28196 17.1H21.12C21.6502 17.1 22.08 16.6747 22.08 16.15V2.85C22.08 2.32533 21.6502 1.9 21.12 1.9H7.28196ZM6.24 19L0 9.5L6.24 0H21.12C22.7106 0 24 1.27599 24 2.85V16.15C24 17.724 22.7106 19 21.12 19H6.24Z" fill="#4A148C"/>
+						</svg>
+					</button>
+				</div>
+				<div class="keyboard-row">
+					<input id="but_num" class="btn2" type="button" value="?123" onclick="fnc_num()">
+					<input id="but_space" class="btn2" type="button" value="SPACE" onclick="fnc_space()">
+					<input id="but_dot" class="btn2" type="button" value="." onclick="fnc_dot()">
+				</div>
+			</div>
+		</div>
+	</div>
+</BODY>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="style.js"></script>
+</HTML>
+
+

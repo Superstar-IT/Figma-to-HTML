@@ -1,0 +1,255 @@
+<html>
+<head>
+	<title>
+		Main Page
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+.btn1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width: 200px;
+	height: 200px;
+	white-space: normal;
+}
+
+.btn2 {
+	background-image: url('/settings.png');
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width: 50px;
+	height: 50px;
+}
+
+.btn3 {
+    background-color: #38006B; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn4 {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn5 {
+    background-color: #BBBBBB; /* Green */
+    border: none;
+    color: purple;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	white-space: normal;
+}
+
+.btn6 {
+  background-color: #38006B;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+
+/*Çizim alanını biçimlendir*/
+#cizimAlani{
+    border: 2px solid #88F;
+    background-color: aliceblue;
+}
+/*Denklem girilen metin kutusunu biçimlendir*/
+#fonksiyon{
+    background-color: lightpink;
+    border: 1px solid red;
+    height: 23px;
+    font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38006B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li2 {
+  float: right;
+}
+
+li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li3 {
+  float: right;
+}
+
+li3 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  top: 15px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  
+thead{
+	background-color: #0daf3f;
+	color: #FFFFFF;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+</style>
+<body>
+	<div class="main-container">
+		<ul>
+		  	<li>
+		  		<button class="btn3" onclick="logout()" p style="font-size:20px;text-align: top;">
+					<tr class="txt">Health Pi</tr>
+					<img class="img" src=""/>
+				</button>
+			</li>
+		  	<li2>
+		  		<button class="btn3" onclick="logout()" p style="font-size:20px;text-align: top;">
+					<p class="txt">Log Out</p>
+					<!-- <img class="img" src="logout.png"/> -->
+					<i class="fa fa-power-off"></i>
+				</button>
+			</li2>
+		</ul>
+		<div class="main-body">
+			<div class="label-txt">
+				Last Recods
+			</div>
+			<div id="check-history" style="height: 162px;">
+				<div id="blood-pressure" class="history-box">
+					<div class="top">
+						<div class="history-box-label">
+							<p class="history-box-label-txt" style="margin-right: 119px">Blood pressure</p>
+							<p class="history-box-label-val">72</p>
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="history-box-value">
+							<p class="history-box-value-txt">120/100</p>
+							<p class="history-box-value-unit">mmHg</p>
+						</div>
+					</div>
+					<div class="bottom"><p>CHECK HISTORY</p></div>
+				</div>
+				<div id="blood-oxygen" class="history-box">
+					<div class="top">
+						<div class="history-box-label">
+							<p class="history-box-label-txt" style="margin-right: 72px">Blood oxygen</p>
+							<p class="history-box-label-val">72</p>
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="history-box-value">
+							<p class="history-box-value-txt">94%</p>
+							<p class="history-box-value-unit">Sp02</p>
+						</div>
+					</div>
+					<div class="bottom"><p>CHECK HISTORY</p></div>
+				</div>
+				<div id="blood-weight" class="history-box">
+					<div class="top">
+						<div class="history-box-label" style="height: 17px;">
+							<p class="history-box-label-txt">Weight</p>
+						</div>
+						<div class="history-box-value">
+							<p class="history-box-value-txt" style="margin: 0 21px 0 0">225</p>
+							<p class="history-box-value-unit">LBs</p>
+						</div>
+					</div>
+					<div class="bottom"><p>CHECK HISTORY</p></div>
+				</div>
+			</div>
+			<div id="question">
+				<button class="btn" onclick="searchbt()">
+					<div class="btn-icon">
+						<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.6667 1.99996H7.88C7.6 1.22663 6.86667 0.666626 6 0.666626C5.13333 0.666626 4.4 1.22663 4.12 1.99996H1.33333C0.6 1.99996 0 2.59996 0 3.33329V12.6666C0 13.4 0.6 14 1.33333 14H10.6667C11.4 14 12 13.4 12 12.6666V3.33329C12 2.59996 11.4 1.99996 10.6667 1.99996ZM6 1.99996C6.36667 1.99996 6.66667 2.29996 6.66667 2.66663C6.66667 3.03329 6.36667 3.33329 6 3.33329C5.63333 3.33329 5.33333 3.03329 5.33333 2.66663C5.33333 2.29996 5.63333 1.99996 6 1.99996ZM7.33333 11.3333H2.66667V9.99996H7.33333V11.3333ZM9.33333 8.66663H2.66667V7.33329H9.33333V8.66663ZM9.33333 5.99996H2.66667V4.66663H9.33333V5.99996Z" fill="white"/>
+						</svg>
+					</div>
+					<p>QUESTIONNARIES</p>
+				</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">	
+
+</script>
+
+</html>
+
